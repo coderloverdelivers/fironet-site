@@ -7,8 +7,8 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: 'en',
-    fallbackLng: 'en',
+    // Let LanguageDetector choose the language; default to Swiss Standard German.
+    fallbackLng: 'de-CH',
     debug: false,
     resources: messages,
     interpolation: {
